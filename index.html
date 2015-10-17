@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="gifChat">
+	<head>
+		<title>Gif-Chat</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body ng-controller="mainController">
+
+
+		<div class='Container'>
+			<form>
+				<input type="text" class="form-control" placeholder="Search" ng-model="message">
+				<button class="btn btn-default" ng-click="findGif()">Submit</button>
+			</form>
+		</div>
+
+		<img ng-repeat="imgSrc in gifs" ng-src="{{imgSrc}}">
+
+
+
+
+
+
+
+
+
+
+		
+		<script src="js/app.js"></script>
+		<script src="js/mainControl.js"></script>
+		<script src="js/mainService.js"></script>
+
+
+	</body>
+</html>
