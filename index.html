@@ -8,17 +8,17 @@
 	</head>
 	<body ng-controller="mainController">
 
-
-		<div class='Container'>
-			<form>
-				<input type="text" class="form-control" placeholder="Search" ng-model="message">
-				<button class="btn btn-default" ng-click="findGif()">Submit</button>
+		
+		<div class='container'>
+			<h1>Gif Messages</h1>
+			<form class="centerMe">
+				<input type="text" class=" text-box sameLine form-control" placeholder="Search" ng-model="message">
+				<button class="sameLine btn btn-default" ng-click="findGif()">Submit</button>
 			</form>
+
+			<img ng-repeat="imgSrc in gifs" ng-src="{{imgSrc}}">
+	
 		</div>
-
-		<img ng-repeat="imgSrc in gifs" ng-src="{{imgSrc}}">
-
-
 
 
 
